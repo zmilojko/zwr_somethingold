@@ -1,4 +1,10 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+		<div class="container_12">
+        	<div class="wrapper">
+                            <%= render(:partial => "/refinery/menu", :locals => {
+                                   :dom_id => 'menu',
+                                   :css => 'menu'
+                                 }) %>
+                     </div>
+                      <div class="foot-text"> <%= t('.copyright', :year => Time.now.year,
+                      :site_name => Refinery::Core.site_name) %> </div>
+        </div>

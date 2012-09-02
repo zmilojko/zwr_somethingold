@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
-.selected {
+.bg1 {
+  height: 600px;
+}
+
+.sf_menu a.selected {
   color: #7DB1B7;
 }

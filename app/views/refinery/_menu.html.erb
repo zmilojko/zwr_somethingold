@@ -7,7 +7,7 @@
     hide_children = Refinery::Core.menu_hide_children if hide_children.nil?
 -%>
 <nav>
-  <ul class="sf-menu sf-js-enabled">
+  <ul class="<%= css %>">
     <%= render :partial => '/refinery/menu_branch', :collection => roots,
                :locals => {
                  :hide_children => hide_children,

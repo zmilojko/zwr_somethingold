@@ -9,3 +9,15 @@
 .sf_menu a.selected {
   color: #7DB1B7;
 }
+
+section h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+.h3_padding_bottom {
+  padding-bottom: 20px;
+}
+
+
+

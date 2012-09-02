@@ -86,9 +86,9 @@ input, select, textarea {
 	overflow:hidden;
 }
 
-h1 {display:inline-block; margin-top:44px; float:left;
+header h1 {display:inline-block; margin-top:44px; float:left;
 	}
-h1 a {
+header h1 a {
 	text-indent:-5000px; 	 
 	background:url(/assets/logo.png) 0 0 no-repeat;	 
 	width:399px;
@@ -97,10 +97,16 @@ h1 a {
 	
 }
 
-h2 {font-size:25px; line-height:1.2307em; color:#494949; text-transform:uppercase;}
+h1, h2 {font-size:25px; line-height:1.2307em; color:#494949; text-transform:uppercase;}
 .h2-top {padding-top:30px;}
 .h2-top1 {padding-top:51px;}
 .h2-top2 {padding-top:62px;}
+
+h3 {font-size:20px; line-height:1.2307em; color:#494949; text-transform:uppercase;}
+.h2-top {padding-top:30px;}
+.h2-top1 {padding-top:51px;}
+.h2-top2 {padding-top:62px;}
+
 
 #easyTooltip {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -224,17 +230,17 @@ ul.sf-menu li li li.sfHover ul {
 #faded .pagination {position:absolute; bottom:0px; left:101px;}
 #faded .pagination li {float:left; margin-right:10px; width:17px; height:17px;}
 #faded .pagination li a {text-decoration:none; display:inline-block; width:17px; height:17px; overflow:hidden; padding:0px 0 0px 0; background:url(/assets/thumb.png) 0 0 no-repeat;}
-#faded .pagination li.current a, #faded .pagination li a:hover {background:url(/assets//thumb-h.png) 0 0px no-repeat;}
+#faded .pagination li.current a, #faded .pagination li a:hover {background:url(/assets/thumb-h.png) 0 0px no-repeat;}
 
-.bg3 {background:url(/assets//bg3.png) 0 0 no-repeat; height:522px; width:269px; margin-top:22px; margin-left:40px;}	
+.bg3 {background:url(/assets/bg3.png) 0 0 no-repeat; height:522px; width:269px; margin-top:22px; margin-left:40px;}	
 
 /*===== header =====*/
 #header {
 	
 }
-.bg1 {background:url(/assets//bg1.gif) 50% 0 repeat-x; height:746px;}
+.bg1 {background:url(/assets/bg1.gif) 50% 0 repeat-x; height:746px;}
 
-.bg2 {background:url(/assets//bg2.gif) 50% 0 repeat-x; height:223px;}
+.bg2 {background:url(/assets/bg2.gif) 50% 0 repeat-x; height:223px;}
 
 .row1 {height:194px; position:relative;}
 .row2 {position:relative; z-index:19;}
@@ -247,7 +253,7 @@ ul.sf-menu li li li.sfHover ul {
 
 
 
-.pic {background:url(/assets//pic.png) 0 0 repeat-x; position:absolute; top:162px; height:1px; left:0px; width:940px;}
+.pic {background:url(/assets/pic.png) 0 0 repeat-x; position:absolute; top:162px; height:1px; left:0px; width:940px;}
 
 .indent {padding-top:23px;}
 .indent1 {padding-top:53px;}
@@ -278,10 +284,10 @@ ul.sf-menu li li li.sfHover ul {
 	
 }
 
-.border {background:url(/assets//border.gif) 0 0 repeat-x; height:1px; width:940px;}
+.border {background:url(/assets/border.gif) 0 0 repeat-x; height:1px; width:940px;}
 .border-pad {margin:51px 0px 55px 0px;}
 
-.border1 {background:url(/assets//border.gif) 0 0 repeat-x; height:1px; margin:13px 0px 0px 0px;}
+.border1 {background:url(/assets/border.gif) 0 0 repeat-x; height:1px; margin:13px 0px 0px 0px;}
 .border1-pad {margin:14px 0px 27px 0px;}
 .border1-pad1 {margin:14px 0px 19px 0px;}
 .border1-pad2 {margin:14px 0px 23px 0px;}
@@ -291,7 +297,7 @@ ul.sf-menu li li li.sfHover ul {
 .border1-pad6 {margin:15px 0px 22px 0px;}
 
 
-.data {background:url(/assets//page1-bg.gif) 0 0 no-repeat; height:57px; width:51px; color:#fff; float:left; font-size:39px; line-height:1.2307em; padding:7px 0px 0px 13px; margin-right:16px;}
+.data {background:url(/assets/page1-bg.gif) 0 0 no-repeat; height:57px; width:51px; color:#fff; float:left; font-size:39px; line-height:1.2307em; padding:7px 0px 0px 13px; margin-right:16px;}
 
 .data-pad {padding:7px 0px 0px 10px; width:54px;}
 
@@ -314,16 +320,17 @@ margin:24px 0px 0px 0px;
 		-moz-border-radius:3px;
 		-webkit-border-radius:3px;
 }
-.link1:hover {background:url(/assets//link1-bg.gif) 0 -30px repeat-x #767676;}
+.link1:hover {background:url(/assets/link1-bg.gif) 0 -30px repeat-x #767676;}
 
 .link1-pad {margin:15px 0px 0px 0px;}
 .link1-pad1 {margin:23px 0px 0px 0px;}
 .link1-pad2 {margin:24px 0px 0px 0px;}
 .link1-pad3 {margin-top:16px; margin-left:1px;}
 
-.list li {font-size:12px; line-height:34px; font-style:italic; }
-.list a {color:#585858; text-decoration:none;background:url(/assets//list-bg.gif) 1px 4px no-repeat; padding-left:19px;}
-.list a:hover {background:url(/assets//list-bg-h.gif) 1px 4px no-repeat;}
+.list li {font-size:12px; line-height:34px; font-style:italic;}
+.list span {background:url(/assets/list-bg.gif) 1px 4px no-repeat; padding-left:19px;}
+.list a {color:#585858; text-decoration:none;background:url(/assets/list-bg.gif) 1px 4px no-repeat; padding-left:19px;}
+.list a:hover {background:url(/assets/list-bg-h.gif) 1px 4px no-repeat;}
 
 .list-pad {padding:16px 0px 0px 0px;}
 
@@ -331,17 +338,17 @@ margin:24px 0px 0px 0px;
 
 .color {color:#585858;}
 
-.page2-bg {background:url(/assets//page2-bg.gif) 0 0 no-repeat; height:45px; width:102px; margin:6px 0px 15px 30px; color:#8c8989; font-size:13px; line-height:19px;}
+.page2-bg {background:url(/assets/page2-bg.gif) 0 0 no-repeat; height:45px; width:102px; margin:6px 0px 15px 30px; color:#8c8989; font-size:13px; line-height:19px;}
 .page2-bg .padding {padding:6px 0px 0px 16px;}
 
 .italic {font-style:italic;}
-.box {height:158px; width:590px; background:url(/assets//box.gif) 0 0 no-repeat; margin:30px 0px 0px 1px; position:relative;}
+.box {height:158px; width:590px; background:url(/assets/box.gif) 0 0 no-repeat; margin:30px 0px 0px 1px; position:relative;}
 .box .padding {padding:22px 0px 10px 32px;}
 
-.link2 {background:url(/assets//link2-bg.png) 0 0 no-repeat; height:32px; width:32px; position:absolute; top:100px; right:26px;}
-.link2:hover {background:url(/assets//link2-bg.png) 0 -32px no-repeat;}
+.link2 {background:url(/assets/link2-bg.png) 0 0 no-repeat; height:32px; width:32px; position:absolute; top:100px; right:26px;}
+.link2:hover {background:url(/assets/link2-bg.png) 0 -32px no-repeat;}
 
-.data1 {background:url(/assets//data1-bg.gif) 0 0 no-repeat; height:57px; width:39px; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 0px 10px; color:#fff; font-size:30px; line-height:1.2307em;
+.data1 {background:url(/assets/data1-bg.gif) 0 0 no-repeat; height:57px; width:39px; font-family:Arial, Helvetica, sans-serif; padding:0px 0px 0px 10px; color:#fff; font-size:30px; line-height:1.2307em;
 float:left; margin-right:13px;}
 .data1 span {font-size:16px; line-height:1.2307em; color:#fff; font-weight:bold; margin-left:3px; margin-top:-6px; display:inline-block;}
 
@@ -350,8 +357,8 @@ float:left; margin-right:13px;}
 
 .video {position:relative; margin:27px 0px 14px 0px;}
 .video img {position:relative; z-index:1;}
-.button-video {position:absolute; top:50%; left:50%; width:63px; height:63px; margin:-26px 0 0 -31px; z-index:2; display:block; background:url(/assets//button-video.png) 0 0 no-repeat;}
-.button-video:hover {background:url(/assets//button-video-h.png) 0 0 no-repeat;}
+.button-video {position:absolute; top:50%; left:50%; width:63px; height:63px; margin:-26px 0 0 -31px; z-index:2; display:block; background:url(/assets/button-video.png) 0 0 no-repeat;}
+.button-video:hover {background:url(/assets/button-video-h.png) 0 0 no-repeat;}
 
 #page1 .col-1 {width:642px; margin-right:0px;}
 #page1 .col-2 {width:260px;}
@@ -399,7 +406,7 @@ ul.tabs li a:hover, ul.tabs li.active a {
 .link3 {margin:16px 0px 0px 2px;}
 .link3 {
 	float:left;	
-	background:url(/assets//button-left1.gif) left 0 no-repeat;
+	background:url(/assets/button-left1.gif) left 0 no-repeat;
 	line-height:1.2307em;
 	font-size:13px;
 	color:#fff;
@@ -411,17 +418,17 @@ ul.tabs li a:hover, ul.tabs li.active a {
 	font-style:normal;
 	padding:0 9px;
 	display:inline-block;
-	background:url(/assets//button-right1.gif) right 0 no-repeat;
+	background:url(/assets/button-right1.gif) right 0 no-repeat;
 }	
 .link3 em em {
 	font-style:normal;
-	background:url(/assets//button-tail1.gif) 0 0 repeat-x;
+	background:url(/assets/button-tail1.gif) 0 0 repeat-x;
 	cursor:pointer;
 	padding:6px 5px 8px 0px;
 }
-.link3:hover {background:url(/assets//button-left1.gif) left -30px no-repeat;}
-.link3:hover em  {background:url(/assets//button-right1.gif) right -30px no-repeat;}
-.link3:hover em em {background:url(/assets//button-tail1.gif) 0 -30px repeat-x;}	
+.link3:hover {background:url(/assets/button-left1.gif) left -30px no-repeat;}
+.link3:hover em  {background:url(/assets/button-right1.gif) right -30px no-repeat;}
+.link3:hover em em {background:url(/assets/button-tail1.gif) 0 -30px repeat-x;}	
 
 iframe {height:201px; width:300px; margin-top:10px;}
 
@@ -441,7 +448,7 @@ dd a:hover {text-decoration:underline;}
 
 .title5 {font-size:18px; line-height:1.2307em; color:#868686; padding:240px 0px 0px 98px;}
 
-.link5 {font-size:26px; line-height:1.2307em; color:#fff; text-decoration:none; background:url(/assets//link5-bg.png) 0 0 repeat; padding:1px 10px 7px 15px; display:inline-block;
+.link5 {font-size:26px; line-height:1.2307em; color:#fff; text-decoration:none; background:url(/assets/link5-bg.png) 0 0 repeat; padding:1px 10px 7px 15px; display:inline-block;
 border-radius:23px;
 	-moz-border-radius:23px;
 	-webkit-border-radius:23px;
@@ -575,7 +582,7 @@ div#contact_form .download-box {
 .buttons-wrapper1 {padding:29px 15px 0px 0px;}
 .buttons-wrapper1 a {
 	float:left;
-	background:url(/assets//button-left1.gif) left 0 no-repeat;
+	background:url(/assets/button-left1.gif) left 0 no-repeat;
 	line-height:1.2307em;
 	font-size:13px;
 	color:#fff;
@@ -588,17 +595,17 @@ div#contact_form .download-box {
 	font-style:normal;
 	padding:0 6px;
 	display:inline-block;
-	background:url(/assets//button-right1.gif) right 0 no-repeat;
+	background:url(/assets/button-right1.gif) right 0 no-repeat;
 }	
 .buttons-wrapper1 a em em {
 	font-style:normal;
-	background:url(/assets//button-tail1.gif) 0 0 repeat-x;
+	background:url(/assets/button-tail1.gif) 0 0 repeat-x;
 	cursor:pointer;
 	padding:6px 9px 8px 5px;
 }
-.buttons-wrapper1 a:hover {background:url(/assets//button-left1.gif) left -30px no-repeat;}
-.buttons-wrapper1 a:hover em  {background:url(/assets//button-right1.gif) right -30px no-repeat;}
-.buttons-wrapper1 a:hover em em {background:url(/assets//button-tail1.gif) 0 -30px repeat-x;}	
+.buttons-wrapper1 a:hover {background:url(/assets/button-left1.gif) left -30px no-repeat;}
+.buttons-wrapper1 a:hover em  {background:url(/assets/button-right1.gif) right -30px no-repeat;}
+.buttons-wrapper1 a:hover em em {background:url(/assets/button-tail1.gif) 0 -30px repeat-x;}	
 
 
 /*==========================================*/

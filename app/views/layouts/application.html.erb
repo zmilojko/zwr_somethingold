@@ -5,8 +5,18 @@
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <%= yield %>
+    <header>
+      <%= render '/refinery/header' -%>
+    </header> 
+		<section id="content" <% if @page.id == 1 %> style="height: 200px;" <% end %>>
+			<div class="container_12">    
+        <%= yield %>
+      </div>
+    </section>
+    <footer>
+      <%= render '/refinery/footer' -%>
+    </footer>    
     <%= render '/refinery/javascripts' %>
-    <script type="text/javascript"> Cufon.now(); </script>  
+    <script type="text/javascript"> Cufon.now(); </script>    
   </body>
 </html>

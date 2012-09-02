@@ -11,3 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
+$("#body").addClass("grid_9 alpha");
+$("#side_body").addClass("grid_3");
+$("h3").addClass("text1");
+$("h3").addClass("h3_padding_bottom");

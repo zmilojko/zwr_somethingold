@@ -1,0 +1,16 @@
+/*
+  Override default refinery 'theme' styles here.
+  These only apply when using custom WYMeditor CSS.
+*/
+
+.text-paragraph-codesegment {
+  font-family: monospace;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  border: 1px black;
+  background-color: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  overflow: auto;
+  padding: 6px 10px;
+}

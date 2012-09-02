@@ -1,0 +1,5 @@
+.link1, #contact-form input, #contact-form textarea, .link10, .link5
+{
+	behavior: url(js/PIE.htc);
+	position:relative;
+}

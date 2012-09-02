@@ -1,0 +1,32 @@
+/*
+  Override default refinery homepage styles here.
+  These only apply to the homepage of your site.
+*/
+
+p {
+  margin: 20px 80px;
+}
+
+.home_page_table_l {
+  display: block;
+  float: left;
+  clear: none;
+  width: 20%;
+  margin: 0 5% 50px 25%;
+}
+
+.home_page_table_r {
+  display: block;
+  float: left;
+  clear: none;
+  width: 20%;
+  margin: 0 20% 50px 10%;
+}
+
+.home_page_table2 {
+  display: block;
+  float: left;
+  clear: both;
+  width: 60%;
+  margin: 0 20% 30px;
+}

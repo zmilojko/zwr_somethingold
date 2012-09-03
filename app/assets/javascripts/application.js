@@ -15,3 +15,6 @@ $("#body").addClass("grid_9 alpha");
 $("#side_body").addClass("grid_3");
 $("h3").addClass("text1");
 $("h3").addClass("h3_padding_bottom");
+
+$("#body_content_left").addClass("grid_9 alpha");
+$("#body_content_right").addClass("grid_3");

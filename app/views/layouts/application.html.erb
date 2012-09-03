@@ -5,13 +5,19 @@
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <header>
+    <header class="main_header">
       <%= render '/refinery/header' -%>
     </header> 
 		<section id="content" <% if @page.id == 1 %> style="height: 200px;" <% end %>>
-			<div class="container_12">    
+			<div class="container_12">  
+      <% if @page.id == 1 %>
+            <div class="indent1"></div>
+            	<div class="wrapper" style="margin-left: auto; margin-right: auto; width: 600px;">   
+      <% else %>
+             <div class="wrapper">
+      <% end %>      
         <%= yield %>
-      </div>
+      </div></div>
     </section>
     <footer>
       <%= render '/refinery/footer' -%>

@@ -86,9 +86,9 @@ input, select, textarea {
 	overflow:hidden;
 }
 
-header h1 {display:inline-block; margin-top:44px; float:left;
+.main_header h1 {display:inline-block; margin-top:44px; float:left;
 	}
-header h1 a {
+.main_header h1 a {
 	text-indent:-5000px; 	 
 	background:url(/assets/logo.png) 0 0 no-repeat;	 
 	width:399px;
@@ -97,7 +97,7 @@ header h1 a {
 	
 }
 
-h1, h2 {font-size:25px; line-height:1.2307em; color:#494949; text-transform:uppercase;}
+h1, h2, h1 a {font-size:25px; line-height:1.2307em; color:#494949; text-transform:uppercase;}
 .h2-top {padding-top:30px;}
 .h2-top1 {padding-top:51px;}
 .h2-top2 {padding-top:62px;}

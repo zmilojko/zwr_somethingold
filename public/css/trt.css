@@ -19,5 +19,9 @@ section h1 {
   padding-bottom: 20px;
 }
 
+.blog_post_in_list_footer {
+  height:auto !important;
+}
+
 
 

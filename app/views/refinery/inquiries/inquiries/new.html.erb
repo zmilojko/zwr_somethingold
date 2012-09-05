@@ -13,12 +13,12 @@
          
         <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry')%>
       </div>
-      <div class="field">
+      <div class="field rowElem">
         <%#= f.required_label :email, :class => 'placeholder-fallback' %>
         <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
 <% if false %>
-      <div class="field">
+      <div class="field rowElem">
         <%= f.label :phone, :class => 'placeholder-fallback' %>
         <%= f.text_field :phone, :class => 'text phone', :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
@@ -27,8 +27,18 @@
         <%#= f.required_label :message, :class => 'placeholder-fallback' %>
         <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
-      <div class="actions">
-        <%= f.submit t('.send') %>
+      <div class="actions rowElem">
+       <div class="buttons-wrapper1">
+        <%#<a href="#" id="submit"><em><em>Submit<img src="/assets/link1-marker.png" class="img-pad1"></em></em></a>%>
+        <input type="hidden" name="command" />
+        <a href="javascript: $('#new_inquiry').submit();">
+            <em><em>Submit<img src="/assets/link1-marker.png" class="img-pad1"></em></em>
+        </a>
+        <%#= f.submit t('.send') %>
+       </div>
+       </div>
+      <div class="actions rowElem">
+        <%#= f.submit t('Sent'), :type => :image, :src => "/images/link1-marker.png", :class =>" img_pad1" %>
         <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
       </div>
     <% end %>

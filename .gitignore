@@ -35,6 +35,9 @@ public/themes/*
 # Public Cache
 public/javascripts/cache
 public/stylesheets/cache
+public/blog
+public/assets
+public/blog.html
 
 # Vendor Cache
 vendor/cache

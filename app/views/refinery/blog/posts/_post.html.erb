@@ -28,6 +28,7 @@
       <% end %>
     </section>
   </header>
+  <%= raw @post.body.html_safe.gsub(/\[gist:(\d+)(\,)(.+)\]/,"<script src='https://gist.github.com/\\1.js?file=\\3'></script>") %>
   <%= @post.body.html_safe %>
 
   <% if Refinery::Blog::Post::ShareThis.enabled? %>

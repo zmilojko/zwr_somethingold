@@ -7,7 +7,7 @@ if (typeof(custom_wymeditor_boot_options) == "undefined") { custom_wymeditor_boo
     {name: 'text-align', rules:['left', 'center', 'right', 'justify'], join: '-'}
     , {name: 'image-align', rules:['left', 'right'], join: '-'}
     , {name: 'font-size', rules:['small','normal','large'], join: '-'}
-    , {name: 'text-paragraph', rules:['codesegment'], join: '-'}
+    , {name: 'text-paragraph', rules:[{name: 'codesegment', title: '{Codesegment}'}], join: '-',title: '{Text_Paragraph}'}
   ]
  };
 }
